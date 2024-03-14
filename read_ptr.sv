@@ -21,24 +21,23 @@ always_ff@(posedge rclk or negedge r_rst_n)
 begin
 	if(!r_rst_n)
 		begin
-		raddr<=0;
+		raddr<=0; //default value
 		rptr<=0;
 		end 
 	else begin
-		raddr<=raddr_next;
-		rptr<=rptr_next;
+		raddr<=raddr_next;//incrementing binary read pointer
+		rptr<=rptr_next;//incrementing gray read pointer
 	end
 end
 
 always_ff@(posedge rclk or negedge r_rst_n)
 begin
 if(!r_rst_n)
-	empty<=1;
+	empty<=1;//initial empty condition
 else
 	empty<=rempty;
 	
 end
-
 
 endmodule
 

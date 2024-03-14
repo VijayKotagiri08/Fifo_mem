@@ -2,27 +2,22 @@ vlib work
 vdel -all
 vlib work
 
-vlog interface.sv
-
+#vlog interface.sv
 vlog w2rsync.sv
 vlog r2wsync.sv
-
-
 vlog write_ptr.sv
 vlog read_ptr.sv
 vlog fifo_mem.sv
-vlog top.sv
-vlog fifo_tb.sv
-#vlog trans_fifo.sv
-#vlog gen_fifo.sv
-#vlog driv_fifo.sv
-vlog environment.sv
+vlog top.sv 
 
-vlog test.sv
+vlog uvmtb_top.sv
 
-vlog tb_top.sv
 
-vsim work.tb_top
-#vsim work.tb
+#vsim work.uvmtb_top
+vsim -coverage -vopt work.uvmtb_top 
+#vsim work.uvmtb_top -coverage -do
 
 run -all
+
+vcover report -html fifo_coverage
+coverage report -detail

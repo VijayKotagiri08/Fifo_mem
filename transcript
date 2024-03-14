@@ -1,0 +1,312 @@
+# vsim -c uvmtb_top -do "run -all; quit" 
+# Start time: 20:22:02 on Mar 11,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: top.sv(5): (vopt-2241) Connection width does not match width of port 'wptr'. The port definition is at: w2rsync.sv(1).
+# ** Warning: top.sv(5): (vopt-2241) Connection width does not match width of port 'wptr_sync'. The port definition is at: w2rsync.sv(1).
+# ** Warning: top.sv(6): (vopt-2241) Connection width does not match width of port 'rptr'. The port definition is at: r2wsync.sv(1).
+# ** Warning: top.sv(6): (vopt-2241) Connection width does not match width of port 'rptr_sync'. The port definition is at: r2wsync.sv(1).
+# ** Warning: top.sv(9): (vopt-2241) Connection width does not match width of port 'rptr_sync'. The port definition is at: write_ptr.sv(1).
+# ** Warning: top.sv(9): (vopt-2241) Connection width does not match width of port 'waddr'. The port definition is at: write_ptr.sv(1).
+# ** Warning: top.sv(9): (vopt-2241) Connection width does not match width of port 'wptr'. The port definition is at: write_ptr.sv(1).
+# ** Warning: top.sv(12): (vopt-2241) Connection width does not match width of port 'wptr_sync'. The port definition is at: read_ptr.sv(1).
+# ** Warning: top.sv(12): (vopt-2241) Connection width does not match width of port 'raddr'. The port definition is at: read_ptr.sv(1).
+# ** Warning: top.sv(12): (vopt-2241) Connection width does not match width of port 'rptr'. The port definition is at: read_ptr.sv(1).
+# ** Warning: top.sv(15): (vopt-2241) Connection width does not match width of port 'waddr'. The port definition is at: fifo_mem.sv(1).
+# ** Warning: top.sv(15): (vopt-2241) Connection width does not match width of port 'raddr'. The port definition is at: fifo_mem.sv(1).
+# ** Warning: sequence_fifo_wr.sv(23): (vopt-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# ** Warning: sequence_fifo_wr.sv(56): (vopt-2239) Treating stand-alone use of presumed external function as an implicit VOID cast.
+# //  Questa Sim-64
+# //  Version 2019.2_1 linux_x86_64 May 13 2019
+# //
+# //  Copyright 1991-2019 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg
+# Loading work.uvmtb_top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.uvmtb_top(fast)
+# Loading work.intfc(fast)
+# Loading /pkgs/mentor/questa/2019.2_1/questasim/uvm-1.1d/linux_x86_64/uvm_dpi.so
+# run -all
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO uvmtest.sv(12) @ 0: uvm_test_top [TEST CLASS] INSIDE CONSTRUCTOR!
+# UVM_INFO @ 0: reporter [RNTST] Running test uvmtest...
+# UVM_INFO uvmtest.sv(18) @ 0: uvm_test_top [TEST CLASS] INSIDE BUILD PHASE!
+# UVM_INFO env.sv(13) @ 0: uvm_test_top.e0 [ENVIRONMENT CLASS] Inside Constructor!
+# UVM_INFO env.sv(19) @ 0: uvm_test_top.e0 [ENVIRONMENT CLASS] Build Phase!
+# UVM_INFO agent.sv(11) @ 0: uvm_test_top.e0.agnt [AGENT CLASS] Inside Constructor!
+# UVM_INFO scoreboard.sv(12) @ 0: uvm_test_top.e0.scb [SCOREBOARD] Inside Constructor!
+# UVM_INFO coverage_uvm.sv(111) @ 0: uvm_test_top.e0.cov [COVERAGE CLASS] Inside Constructor!
+# UVM_INFO agent.sv(18) @ 0: uvm_test_top.e0.agnt [AGENT CLASS] BUILD PHASE!
+# UVM_INFO sequencer.sv(10) @ 0: uvm_test_top.e0.agnt.s0 [SEQUENCER] Inside Constructor!
+# UVM_INFO driver.sv(11) @ 0: uvm_test_top.e0.agnt.d0 [DRIVER] Inside Constructor!
+# UVM_INFO monitor.sv(11) @ 0: uvm_test_top.e0.agnt.mon [MONITOR] Inside Constructor!
+# UVM_INFO driver.sv(18) @ 0: uvm_test_top.e0.agnt.d0 [DRIVER CLASS] Build Phase!
+# UVM_INFO monitor.sv(17) @ 0: uvm_test_top.e0.agnt.mon [MONITOR] Inside Build Phase!
+# UVM_INFO sequencer.sv(16) @ 0: uvm_test_top.e0.agnt.s0 [SEQUENCER] Build Phase!
+# UVM_INFO scoreboard.sv(18) @ 0: uvm_test_top.e0.scb [SCOREBOARD] Build phase!
+# UVM_INFO driver.sv(31) @ 0: uvm_test_top.e0.agnt.d0 [DRIVER CLASS] Connect Phase!
+# UVM_INFO monitor.sv(28) @ 0: uvm_test_top.e0.agnt.mon [MONITOR] Inside Connect Phase!
+# UVM_INFO sequencer.sv(22) @ 0: uvm_test_top.e0.agnt.s0 [SEQUENCER] Connect Phase!
+# UVM_INFO agent.sv(27) @ 0: uvm_test_top.e0.agnt [AGENT CLASS] CONNECT PHASE!
+# UVM_INFO scoreboard.sv(28) @ 0: uvm_test_top.e0.scb [SCOREBOARD] Connect Phase!
+# UVM_INFO env.sv(30) @ 0: uvm_test_top.e0 [ENVIRONMENT CLASS] Connect Phase!
+# UVM_INFO uvmtest.sv(25) @ 0: uvm_test_top [TEST CLASS] INSIDE CONNECT PHASE!
+# UVM_INFO @ 0: reporter [UVMTOP] UVM testbench topology:
+# --------------------------------------------------------------
+# Name                       Type                    Size  Value
+# --------------------------------------------------------------
+# uvm_test_top               uvmtest                 -     @471 
+#   e0                       env                     -     @478 
+#     agnt                   agent                   -     @485 
+#       d0                   driver                  -     @616 
+#         rsp_port           uvm_analysis_port       -     @631 
+#         seq_item_port      uvm_seq_item_pull_port  -     @623 
+#       mon                  monitor                 -     @639 
+#         monitor_port       uvm_analysis_port       -     @647 
+#       s0                   sequencer               -     @507 
+#         rsp_export         uvm_analysis_export     -     @514 
+#         seq_item_export    uvm_seq_item_pull_imp   -     @608 
+#         arbitration_queue  array                   0     -    
+#         lock_queue         array                   0     -    
+#         num_last_reqs      integral                32    'd1  
+#         num_last_rsps      integral                32    'd1  
+#     cov                    coverage                -     @499 
+#       coverage_port        uvm_analysis_imp        -     @661 
+#     scb                    scoreboard              -     @492 
+#       scoreboard_port      uvm_analysis_imp        -     @669 
+# --------------------------------------------------------------
+# 
+# UVM_INFO uvmtest.sv(32) @ 0: uvm_test_top [TEST CLASS] INSIDE RUN PHASE!
+# UVM_INFO sequence_fifo_wr.sv(12) @ 0: reporter@@fifo_sequence [FIFO_SEQUENCE] Inside Constructor!
+# UVM_INFO env.sv(39) @ 0: uvm_test_top.e0 [ENVIRONMENT CLASS] Inside Run Phase!
+# UVM_INFO scoreboard.sv(35) @ 0: uvm_test_top.e0.scb [SCOREBOARD] Run Phase!
+# UVM_INFO agent.sv(34) @ 0: uvm_test_top.e0.agnt [AGENT CLASS] INSIDE BUILD PHASE!
+# UVM_INFO monitor.sv(34) @ 0: uvm_test_top.e0.agnt.mon [MONITOR] Inside Run Phase!
+# UVM_INFO driver.sv(39) @ 0: uvm_test_top.e0.agnt.d0 [DRIVER CLASS] Inside run Phase!
+# UVM_INFO sequence_fifo_wr.sv(20) @ 0: reporter@@fifo_sequence [FIFO_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO sequence_fifo_wr.sv(24) @ 0: reporter@@fifo_sequence [SEQ] Generate new item: w_en =1, r_en =0,data_in =49
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO monitor.sv(52) @ 2: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=2,w_en=1,r_en=0,data_in= 49,full=0,empty=0, waddr=  X,
+# UVM_INFO scoreboard.sv(53) @ 2: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in= 49, full=0
+# UVM_INFO driver.sv(64) @ 2: uvm_test_top.e0.agnt.d0 [DRIVER_WRITE] Burtst Dtails:time=2,w_en=1,r_en=0,data_in= 49,full=0,empty=0,waddr=  X
+# UVM_INFO scoreboard.sv(77) @ 2: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(29) @ 2: reporter@@fifo_sequence [SEQ]  Done Generate new item:           0
+# UVM_INFO sequence_fifo_wr.sv(20) @ 2: reporter@@fifo_sequence [FIFO_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO sequence_fifo_wr.sv(24) @ 2: reporter@@fifo_sequence [SEQ] Generate new item: w_en =1, r_en =0,data_in =152
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(64) @ 6: uvm_test_top.e0.agnt.d0 [DRIVER_WRITE] Burtst Dtails:time=6,w_en=1,r_en=0,data_in=152,full=0,empty=1,waddr=  0
+# UVM_INFO monitor.sv(52) @ 6: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=6,w_en=1,r_en=0,data_in=152,full=0,empty=1, waddr=  0,
+# UVM_INFO scoreboard.sv(53) @ 6: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in=152, full=0
+# UVM_INFO sequence_fifo_wr.sv(29) @ 6: reporter@@fifo_sequence [SEQ]  Done Generate new item:           1
+# UVM_INFO sequence_fifo_wr.sv(20) @ 6: reporter@@fifo_sequence [FIFO_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(77) @ 6: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(24) @ 6: reporter@@fifo_sequence [SEQ] Generate new item: w_en =1, r_en =0,data_in =121
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(64) @ 10: uvm_test_top.e0.agnt.d0 [DRIVER_WRITE] Burtst Dtails:time=10,w_en=1,r_en=0,data_in=121,full=0,empty=1,waddr=  0
+# UVM_INFO monitor.sv(52) @ 10: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=10,w_en=1,r_en=0,data_in=121,full=0,empty=1, waddr=  0,
+# UVM_INFO scoreboard.sv(53) @ 10: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in=121, full=0
+# UVM_INFO sequence_fifo_wr.sv(29) @ 10: reporter@@fifo_sequence [SEQ]  Done Generate new item:           2
+# UVM_INFO sequence_fifo_wr.sv(20) @ 10: reporter@@fifo_sequence [FIFO_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(77) @ 10: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(24) @ 10: reporter@@fifo_sequence [SEQ] Generate new item: w_en =1, r_en =0,data_in =179
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(64) @ 14: uvm_test_top.e0.agnt.d0 [DRIVER_WRITE] Burtst Dtails:time=14,w_en=1,r_en=0,data_in=179,full=0,empty=1,waddr=  0
+# UVM_INFO monitor.sv(52) @ 14: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=14,w_en=1,r_en=0,data_in=179,full=0,empty=1, waddr=  0,
+# UVM_INFO scoreboard.sv(53) @ 14: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in=179, full=0
+# UVM_INFO sequence_fifo_wr.sv(29) @ 14: reporter@@fifo_sequence [SEQ]  Done Generate new item:           3
+# UVM_INFO sequence_fifo_wr.sv(20) @ 14: reporter@@fifo_sequence [FIFO_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(77) @ 14: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(24) @ 14: reporter@@fifo_sequence [SEQ] Generate new item: w_en =1, r_en =0,data_in =26
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(64) @ 18: uvm_test_top.e0.agnt.d0 [DRIVER_WRITE] Burtst Dtails:time=18,w_en=1,r_en=0,data_in= 26,full=0,empty=1,waddr=  0
+# UVM_INFO monitor.sv(52) @ 18: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=18,w_en=1,r_en=0,data_in= 26,full=0,empty=1, waddr=  0,
+# UVM_INFO scoreboard.sv(53) @ 18: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in= 26, full=0
+# UVM_INFO sequence_fifo_wr.sv(29) @ 18: reporter@@fifo_sequence [SEQ]  Done Generate new item:           4
+# UVM_INFO sequence_fifo_wr.sv(20) @ 18: reporter@@fifo_sequence [FIFO_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(77) @ 18: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(24) @ 18: reporter@@fifo_sequence [SEQ] Generate new item: w_en =1, r_en =0,data_in =50
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(64) @ 22: uvm_test_top.e0.agnt.d0 [DRIVER_WRITE] Burtst Dtails:time=22,w_en=1,r_en=0,data_in= 50,full=0,empty=1,waddr=  1
+# UVM_INFO monitor.sv(52) @ 22: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=22,w_en=1,r_en=0,data_in= 50,full=0,empty=1, waddr=  1,
+# UVM_INFO scoreboard.sv(53) @ 22: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in= 50, full=0
+# UVM_INFO sequence_fifo_wr.sv(29) @ 22: reporter@@fifo_sequence [SEQ]  Done Generate new item:           5
+# UVM_INFO sequence_fifo_wr.sv(20) @ 22: reporter@@fifo_sequence [FIFO_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(77) @ 22: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(24) @ 22: reporter@@fifo_sequence [SEQ] Generate new item: w_en =1, r_en =0,data_in =139
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(64) @ 26: uvm_test_top.e0.agnt.d0 [DRIVER_WRITE] Burtst Dtails:time=26,w_en=1,r_en=0,data_in=139,full=0,empty=1,waddr=  2
+# UVM_INFO monitor.sv(52) @ 26: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=26,w_en=1,r_en=0,data_in=139,full=0,empty=1, waddr=  2,
+# UVM_INFO scoreboard.sv(53) @ 26: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in=139, full=0
+# UVM_INFO sequence_fifo_wr.sv(29) @ 26: reporter@@fifo_sequence [SEQ]  Done Generate new item:           6
+# UVM_INFO sequence_fifo_wr.sv(20) @ 26: reporter@@fifo_sequence [FIFO_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(77) @ 26: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(24) @ 26: reporter@@fifo_sequence [SEQ] Generate new item: w_en =1, r_en =0,data_in =169
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(64) @ 30: uvm_test_top.e0.agnt.d0 [DRIVER_WRITE] Burtst Dtails:time=30,w_en=1,r_en=0,data_in=169,full=0,empty=1,waddr=  3
+# UVM_INFO monitor.sv(52) @ 30: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=30,w_en=1,r_en=0,data_in=169,full=0,empty=1, waddr=  3,
+# UVM_INFO scoreboard.sv(53) @ 30: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in=169, full=0
+# UVM_INFO sequence_fifo_wr.sv(29) @ 30: reporter@@fifo_sequence [SEQ]  Done Generate new item:           7
+# UVM_INFO sequence_fifo_wr.sv(31) @ 30: reporter@@fifo_sequence [SEQ]  Done Generation of items:           8
+# UVM_INFO scoreboard.sv(77) @ 30: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO monitor.sv(52) @ 34: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=34,w_en=1,r_en=0,data_in=169,full=0,empty=1, waddr=  4,
+# UVM_INFO scoreboard.sv(53) @ 34: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in=169, full=0
+# UVM_INFO scoreboard.sv(77) @ 34: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO monitor.sv(52) @ 38: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=38,w_en=1,r_en=0,data_in=169,full=0,empty=1, waddr=  5,
+# UVM_INFO scoreboard.sv(53) @ 38: uvm_test_top.e0.scb [Scoreboard write data_in] Burtst Dtails:w_en=1, data_in=169, full=0
+# UVM_INFO scoreboard.sv(77) @ 38: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(12) @ 40: reporter@@sequence_fifo_rd [FIFO_SEQUENCE] Inside Constructor!
+# UVM_INFO sequence_fifo_wr.sv(46) @ 40: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] Inside Constructor!
+# UVM_INFO sequence_fifo_wr.sv(53) @ 40: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO sequence_fifo_wr.sv(57) @ 40: reporter@@sequence_fifo_rd [SEQ] Generate new item:w_en =0, r_en =1,data_in =114 
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO monitor.sv(52) @ 42: uvm_test_top.e0.agnt.mon [MONITOR WRITE] Burtst Dtails:time=42,w_en=0,r_en=1,data_in=114,full=0,empty=1, waddr=  6,
+# UVM_INFO monitor.sv(66) @ 45: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=45,w_en=0,r_en=1,data_out= 26,full=0,empty=1, raddr=  0
+# UVM_INFO driver.sv(74) @ 45: uvm_test_top.e0.agnt.d0 [DRIVER_READ] Burtst Dtails:time=45,w_en=0,r_en=1,data_out= 26,full=0,empty=1,raddr=  0
+# UVM_ERROR scoreboard.sv(73) @ 45: uvm_test_top.e0.scb [Comparing read] transaction failed actual= 26, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(63) @ 45: reporter@@sequence_fifo_rd [SEQ]  done Generate new item:           0
+# UVM_INFO sequence_fifo_wr.sv(53) @ 45: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO sequence_fifo_wr.sv(57) @ 45: reporter@@sequence_fifo_rd [SEQ] Generate new item:w_en =0, r_en =1,data_in =52 
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(74) @ 55: uvm_test_top.e0.agnt.d0 [DRIVER_READ] Burtst Dtails:time=55,w_en=0,r_en=1,data_out= 26,full=0,empty=1,raddr=  0
+# UVM_INFO monitor.sv(66) @ 55: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=55,w_en=0,r_en=1,data_out= 26,full=0,empty=1, raddr=  0
+# UVM_INFO sequence_fifo_wr.sv(63) @ 55: reporter@@sequence_fifo_rd [SEQ]  done Generate new item:           1
+# UVM_INFO sequence_fifo_wr.sv(53) @ 55: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_ERROR scoreboard.sv(73) @ 55: uvm_test_top.e0.scb [Comparing read] transaction failed actual= 26, expected_data=  0
+# UVM_INFO sequence_fifo_wr.sv(57) @ 55: reporter@@sequence_fifo_rd [SEQ] Generate new item:w_en =0, r_en =1,data_in =43 
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(74) @ 65: uvm_test_top.e0.agnt.d0 [DRIVER_READ] Burtst Dtails:time=65,w_en=0,r_en=1,data_out= 26,full=0,empty=0,raddr=  0
+# UVM_INFO monitor.sv(66) @ 65: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=65,w_en=0,r_en=1,data_out= 26,full=0,empty=0, raddr=  0
+# UVM_INFO sequence_fifo_wr.sv(63) @ 65: reporter@@sequence_fifo_rd [SEQ]  done Generate new item:           2
+# UVM_INFO sequence_fifo_wr.sv(53) @ 65: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(69) @ 65: uvm_test_top.e0.scb [Scoreboard_getting read data_in] Burtst Dtails:r_en=1, data_in= 43, full=0
+# UVM_ERROR scoreboard.sv(73) @ 65: uvm_test_top.e0.scb [Comparing read] transaction failed actual= 26, expected_data= 49
+# UVM_INFO sequence_fifo_wr.sv(57) @ 65: reporter@@sequence_fifo_rd [SEQ] Generate new item:w_en =0, r_en =1,data_in =230 
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(74) @ 75: uvm_test_top.e0.agnt.d0 [DRIVER_READ] Burtst Dtails:time=75,w_en=0,r_en=1,data_out= 50,full=0,empty=0,raddr=  1
+# UVM_INFO monitor.sv(66) @ 75: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=75,w_en=0,r_en=1,data_out= 50,full=0,empty=0, raddr=  1
+# UVM_INFO sequence_fifo_wr.sv(63) @ 75: reporter@@sequence_fifo_rd [SEQ]  done Generate new item:           3
+# UVM_INFO sequence_fifo_wr.sv(53) @ 75: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(69) @ 75: uvm_test_top.e0.scb [Scoreboard_getting read data_in] Burtst Dtails:r_en=1, data_in=230, full=0
+# UVM_ERROR scoreboard.sv(73) @ 75: uvm_test_top.e0.scb [Comparing read] transaction failed actual= 50, expected_data=152
+# UVM_INFO sequence_fifo_wr.sv(57) @ 75: reporter@@sequence_fifo_rd [SEQ] Generate new item:w_en =0, r_en =1,data_in =112 
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(74) @ 85: uvm_test_top.e0.agnt.d0 [DRIVER_READ] Burtst Dtails:time=85,w_en=0,r_en=1,data_out=139,full=0,empty=0,raddr=  2
+# UVM_INFO monitor.sv(66) @ 85: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=85,w_en=0,r_en=1,data_out=139,full=0,empty=0, raddr=  2
+# UVM_INFO sequence_fifo_wr.sv(63) @ 85: reporter@@sequence_fifo_rd [SEQ]  done Generate new item:           4
+# UVM_INFO sequence_fifo_wr.sv(53) @ 85: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(69) @ 85: uvm_test_top.e0.scb [Scoreboard_getting read data_in] Burtst Dtails:r_en=1, data_in=112, full=0
+# UVM_ERROR scoreboard.sv(73) @ 85: uvm_test_top.e0.scb [Comparing read] transaction failed actual=139, expected_data=121
+# UVM_INFO sequence_fifo_wr.sv(57) @ 85: reporter@@sequence_fifo_rd [SEQ] Generate new item:w_en =0, r_en =1,data_in =236 
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(74) @ 95: uvm_test_top.e0.agnt.d0 [DRIVER_READ] Burtst Dtails:time=95,w_en=0,r_en=1,data_out=169,full=0,empty=0,raddr=  3
+# UVM_INFO monitor.sv(66) @ 95: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=95,w_en=0,r_en=1,data_out=169,full=0,empty=0, raddr=  3
+# UVM_INFO sequence_fifo_wr.sv(63) @ 95: reporter@@sequence_fifo_rd [SEQ]  done Generate new item:           5
+# UVM_INFO sequence_fifo_wr.sv(53) @ 95: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(69) @ 95: uvm_test_top.e0.scb [Scoreboard_getting read data_in] Burtst Dtails:r_en=1, data_in=236, full=0
+# UVM_ERROR scoreboard.sv(73) @ 95: uvm_test_top.e0.scb [Comparing read] transaction failed actual=169, expected_data=179
+# UVM_INFO sequence_fifo_wr.sv(57) @ 95: reporter@@sequence_fifo_rd [SEQ] Generate new item:w_en =0, r_en =1,data_in =160 
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(74) @ 105: uvm_test_top.e0.agnt.d0 [DRIVER_READ] Burtst Dtails:time=105,w_en=0,r_en=1,data_out=169,full=0,empty=0,raddr=  4
+# UVM_INFO monitor.sv(66) @ 105: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=105,w_en=0,r_en=1,data_out=169,full=0,empty=0, raddr=  4
+# UVM_INFO sequence_fifo_wr.sv(63) @ 105: reporter@@sequence_fifo_rd [SEQ]  done Generate new item:           6
+# UVM_INFO sequence_fifo_wr.sv(53) @ 105: reporter@@sequence_fifo_rd [FIFO_READ_SEQUENCE] INSIDE THE TASK BODY!
+# UVM_INFO scoreboard.sv(69) @ 105: uvm_test_top.e0.scb [Scoreboard_getting read data_in] Burtst Dtails:r_en=1, data_in=160, full=0
+# UVM_ERROR scoreboard.sv(73) @ 105: uvm_test_top.e0.scb [Comparing read] transaction failed actual=169, expected_data= 26
+# UVM_INFO sequence_fifo_wr.sv(57) @ 105: reporter@@sequence_fifo_rd [SEQ] Generate new item:w_en =0, r_en =1,data_in =25 
+# ------------------------------------------------------------------
+# ------------------------------------------------------------------
+# UVM_INFO driver.sv(74) @ 115: uvm_test_top.e0.agnt.d0 [DRIVER_READ] Burtst Dtails:time=115,w_en=0,r_en=1,data_out=169,full=0,empty=0,raddr=  5
+# UVM_INFO monitor.sv(66) @ 115: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=115,w_en=0,r_en=1,data_out=169,full=0,empty=0, raddr=  5
+# UVM_INFO sequence_fifo_wr.sv(63) @ 115: reporter@@sequence_fifo_rd [SEQ]  done Generate new item:           7
+# UVM_INFO sequence_fifo_wr.sv(65) @ 115: reporter@@sequence_fifo_rd [SEQ]  Done Generation of items:           8
+# UVM_INFO scoreboard.sv(69) @ 115: uvm_test_top.e0.scb [Scoreboard_getting read data_in] Burtst Dtails:r_en=1, data_in= 25, full=0
+# UVM_ERROR scoreboard.sv(73) @ 115: uvm_test_top.e0.scb [Comparing read] transaction failed actual=169, expected_data= 50
+# UVM_INFO monitor.sv(66) @ 125: uvm_test_top.e0.agnt.mon [MONITOR READ] Burtst Dtails:time=125,w_en=0,r_en=1,data_out=  x,full=0,empty=1, raddr=  6
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 125: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO scoreboard.sv(77) @ 125: uvm_test_top.e0.scb [Comparing read] transaction passed actual=  0, expected_data=  0
+# UVM_INFO coverage_uvm.sv(144) @ 125: uvm_test_top.e0.cov [COVERAGE] Coverage=1.829529%
+# UVM_INFO coverage_uvm.sv(145) @ 125: uvm_test_top.e0.cov [COVERAGE] Coverage=65.384615%
+# UVM_INFO coverage_uvm.sv(146) @ 125: uvm_test_top.e0.cov [COVERAGE] Coverage=62.500000%
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :  152
+# UVM_WARNING :    0
+# UVM_ERROR :    8
+# UVM_FATAL :    0
+# ** Report counts by id
+# [AGENT CLASS]     4
+# [COVERAGE]     3
+# [COVERAGE CLASS]     1
+# [Comparing read]    19
+# [DRIVER]     1
+# [DRIVER CLASS]     3
+# [DRIVER_READ]     8
+# [DRIVER_WRITE]     8
+# [ENVIRONMENT CLASS]     4
+# [FIFO_READ_SEQUENCE]     9
+# [FIFO_SEQUENCE]    10
+# [MONITOR]     4
+# [MONITOR READ]     9
+# [MONITOR WRITE]    11
+# [Questa UVM]     2
+# [RNTST]     1
+# [SCOREBOARD]     4
+# [SEQ]    34
+# [SEQUENCER]     3
+# [Scoreboard write data_in]    10
+# [Scoreboard_getting read data_in]     6
+# [TEST CLASS]     4
+# [TEST_DONE]     1
+# [UVMTOP]     1
+# ** Note: $finish    : /pkgs/mentor/questa/2019.2_1/questasim/linux_x86_64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 125 ns  Iteration: 54  Instance: /uvmtb_top
+# End time: 20:22:09 on Mar 11,2024, Elapsed time: 0:00:07
+# Errors: 0, Warnings: 14
